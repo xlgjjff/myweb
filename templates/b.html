@@ -1,0 +1,59 @@
+﻿<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jka</title>
+<style>
+.nav ul{
+width:980px;
+margin:0px auto;
+height:38px;
+padding:0;
+}
+.nav ul li{
+float:left;
+}
+.nav ul li a{
+width:80px;
+height:28px;
+line-height:28px;
+background:green;
+color:#FFF;
+margin:5px 10px;
+font-size:12px;
+display:block;
+text-align:center;
+text-decoration:none;
+}
+.nav ul li a:hover{
+width:78px;
+height:26px;
+line-height:28px;
+border:1px solid red;
+color:red;
+background:#FFF;
+}
+</style>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#test1").html("<b>Hello world!</b>");
+  });
+});
+</script>
+</head>
+<body>
+<div class="nav">
+ <ul>
+   <li id="test1"><a  href="#">我的</a></li>
+   <li><a href="#">a</a></li>
+   <li><a href="#">b</a></li>
+   <li><a href="#">c</a></li>
+   <li><a href="#">d</a></li>
+   <li><a href="#">f</a></li>
+   <li><a href="#">g</a></li>
+ </ul>
+</div>
+<button id="btn1">Set Text</button>
+</body>
+</html>
