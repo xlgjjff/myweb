@@ -31,8 +31,8 @@ def teardown_request(exception):
 def show_entries():
     cur = g.db.execute('select title, text from entries order by id desc')
     entries = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
-   # return render_template('show_entries.html', entries=entries)
-    return render_template('dt.html')
+    return render_template('show_entries.html', entries=entries)
+    #return render_template('dt.html')
 @app.route('/add', methods=['POST'])
 def add_entry():
     if not session.get('logged_in'):
